@@ -25,7 +25,7 @@ def get_books_from_page(soup):
             "availability": availability,
             "rating": rating,
             "url": book_url,
-            "image": image_url  # ✅ Added image URL
+            "image": image_url
         })
     return books
 
