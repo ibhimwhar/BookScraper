@@ -54,23 +54,15 @@ cd book-scraper
 
 ```json
 
-[
-  {
-    "title": "A Light in the Attic",
-    "price": "£51.77",
-    "availability": "In stock",
-    "rating": "Three",
-    "url": "http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
-  },
-  {
-    "title": "Tipping the Velvet",
-    "price": "£53.74",
-    "availability": "In stock",
-    "rating": "One",
-    "url": "http://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
-  },
-  ...
-]
+{
+  "title": "A Light in the Attic",
+  "price": "£51.77",
+  "availability": "In stock",
+  "rating": "Three",
+  "url": "http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+  "image": "http://books.toscrape.com/media/cache/fe/3b/fe3b2e42dbf3a0535d6a1d8fdd6cfe2e.jpg"
+}
+
 ```
 #### Deactivate your virtual environment
 `deactivate`
