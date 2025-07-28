@@ -17,13 +17,15 @@ def get_books_from_page(soup):
         rating_class = book.select_one("p.star-rating")["class"]
         rating = rating_class[1] if len(rating_class) > 1 else "None"
         book_url = urljoin(BASE_URL, book.h3.a["href"])
+        image_url = urljoin(BASE_URL, book.find("img")["src"])
 
         books.append({
             "title": title,
             "price": price,
             "availability": availability,
             "rating": rating,
-            "url": book_url
+            "url": book_url,
+            "image": image_url  # ✅ Added image URL
         })
     return books
 
